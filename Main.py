@@ -2,6 +2,14 @@ from typing import List
 
 def quick_sort(data, low, high) -> List[int]:
     # Write code here
+     for i in range(1,len(array)):
+        key = array[i]
+        j = i -1
+        while j >= 0 and key < array[j]:
+            array[j+1] = array[j]
+            j -= 1
+        array[j+1] = key
+    return array
 
 
 input_data = input()
